@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+.error-msg{
+   color: rgb(235, 16, 16);
+   padding: 5px;
+   font-weight: 500;
+}
+.app-container{
+   max-width: 600px;
+}
+.app-container .app-heading{
+   color: rgb(109, 109, 109);
+}
+.user-list-container{
+   border: 1px solid rgb(205, 205, 205);
+   border-radius: 0.3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-list-container .user-box{
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid rgb(205, 205, 205);
+   padding: 0.8rem;
+}
+.user-list-container .user-box:last-child{
+   border-bottom: none;
+}
+.user-box .user-box-info{
+   flex-grow: 1;
+}
+.user-box .user-box-info p{
+   font-size: 1rem;
+   margin: 0;
+   font-weight: 500;
+}
+.user-box .user-box-info p.user-box-info-email{
+   color: rgb(106, 106, 106);
+   font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-box .user-box-btns button{
+   margin: 0 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 500px){
+   .user-box .user-box-info p{
+      font-size: 0.8rem;
+   }
 }
